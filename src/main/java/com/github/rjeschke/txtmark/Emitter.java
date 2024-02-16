@@ -421,6 +421,14 @@ class Emitter
             {
                 final String link = temp.toString();
                 this.config.decorator.openLink(out);
+                
+                if ( config.hrefTarget != null )
+                {
+                  out.append(" target=\"");
+                  out.append(config.hrefTarget);
+                  out.append("\"");
+                }
+                
                 out.append(" href=\"");
                 Utils.appendValue(out, link, 0, link.length());
                 out.append("\">");
