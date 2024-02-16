@@ -9,4 +9,4 @@ target/
 *.releaseBackup
 release.properties
 *.pyc
-
+nb-*.xml
